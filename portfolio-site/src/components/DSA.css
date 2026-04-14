@@ -1,0 +1,89 @@
+.dsa-container {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 40px;
+  align-items: start;
+}
+
+.dsa-card-header {
+  display: flex;
+  align-items: center;
+  gap: 12px;
+  margin-bottom: 28px;
+}
+
+.dsa-card-header h3 {
+  font-family: var(--font-display);
+  font-size: 1.2rem;
+  font-weight: 600;
+}
+
+.dsa-icon {
+  font-size: 1.4rem;
+  color: var(--accent-purple);
+}
+
+.dsa-stats {
+  display: flex;
+  flex-direction: column;
+  gap: 24px;
+}
+
+.dsa-stat-label {
+  font-family: var(--font-code);
+  font-size: 0.75rem;
+  color: var(--text-muted);
+  text-transform: uppercase;
+  letter-spacing: 1px;
+  display: block;
+  margin-bottom: 10px;
+}
+
+.dsa-stat-tags {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 8px;
+}
+
+.dsa-status {
+  font-family: var(--font-code);
+  font-size: 0.85rem;
+  color: var(--accent-lavender);
+}
+
+.dsa-context {
+  display: flex;
+  flex-direction: column;
+  gap: 16px;
+}
+
+.dsa-context-icon {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 48px;
+  height: 48px;
+  border-radius: 12px;
+  background: rgba(123, 94, 234, 0.1);
+  border: 1px solid rgba(123, 94, 234, 0.2);
+  color: var(--accent-purple);
+  font-size: 1.3rem;
+}
+
+.dsa-context h3 {
+  font-family: var(--font-display);
+  font-size: 1.2rem;
+  font-weight: 600;
+}
+
+.dsa-context p {
+  color: var(--text-secondary);
+  font-size: 0.92rem;
+  line-height: 1.8;
+}
+
+@media (max-width: 768px) {
+  .dsa-container {
+    grid-template-columns: 1fr;
+  }
+}
