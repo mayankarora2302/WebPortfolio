@@ -1,0 +1,4 @@
+{
+  "buildCommand": "cd portfolio-site && npm install && npm run build",
+  "outputDirectory": "portfolio-site/dist"
+}
